@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SINC - Soluções Corporativas</title>
+    <meta name="description" content="SINC: Inovação e Gestão Corporativa. Oferecemos soluções premium para o sucesso da sua empresa.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo-container">
+                <img src="assets/logo.png" alt="Logo SINC" class="logo-img">
+                <span class="logo-text">SINC</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#home">Início</a>
+                <a href="#about">Sobre</a>
+                <a href="#services">Serviços</a>
+                <a href="#contact" class="btn-primary-outline">Contato</a>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="fade-in">O Futuro da Gestão <span>Empresarial</span></h1>
+                <p class="fade-in delay-1">Soluções tecnológicas e estratégicas premium para impulsionar o seu negócio no mercado competitivo.</p>
+                <div class="hero-buttons fade-in delay-2">
+                    <a href="#services" class="btn-primary">Nossos Serviços</a>
+                    <a href="#about" class="btn-secondary">Conheça a SINC</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Sobre a SINC</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text slide-up">
+                        <h3>Inovação em cada processo</h3>
+                        <p>A SINC nasceu com o propósito de redefinir a gestão corporativa. Combinamos tecnologia de ponta com design centrado no usuário para oferecer plataformas que conectam equipes, simplificam tarefas e escalam resultados.</p>
+                        <p>Nossa equipe de especialistas trabalha incansavelmente para construir um ecossistema digital onde a sua empresa pode prosperar sem limites.</p>
+                        <ul class="features-list">
+                            <li>Gestão Eficiente</li>
+                            <li>Tecnologia Escalável</li>
+                            <li>Design Premium</li>
+                        </ul>
+                    </div>
+                    <div class="about-image slide-up delay-1">
+                        <div class="glass-card mockup-card">
+                            <div class="mockup-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="mockup-body">
+                                <h4>Dashboard SINC</h4>
+                                <div class="mockup-line"></div>
+                                <div class="mockup-line short"></div>
+                                <div class="mockup-stats">
+                                    <div class="stat-box"></div>
+                                    <div class="stat-box highlight"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section section-padding">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h2>Nossos Serviços</h2>
+                    <div class="divider mx-auto"></div>
+                    <p class="section-subtitle">Soluções completas para transformar o seu negócio</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card slide-up">
+                        <div class="service-icon">✦</div>
+                        <h3>Consultoria Estratégica</h3>
+                        <p>Análise profunda do seu negócio para identificar oportunidades de crescimento e otimização de recursos.</p>
+                    </div>
+                    <div class="service-card slide-up delay-1">
+                        <div class="service-icon">✧</div>
+                        <h3>Desenvolvimento de Software</h3>
+                        <p>Sistemas sob medida, rápidos e escaláveis, desenvolvidos com as tecnologias mais recentes do mercado.</p>
+                    </div>
+                    <div class="service-card slide-up delay-2">
+                        <div class="service-icon">⟡</div>
+                        <h3>Gestão de Equipes</h3>
+                        <p>Ferramentas exclusivas para gerenciamento de diretórios, calendários e tarefas da sua corporação.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info slide-up">
+                        <h2>Pronto para inovar?</h2>
+                        <p>Entre em contato conosco e descubra como a SINC pode elevar o patamar da sua empresa.</p>
+                        <div class="info-item">
+                            <strong>Email:</strong> contato@sinc.com.br
+                        </div>
+                        <div class="info-item">
+                            <strong>Telefone:</strong> +55 (11) 99999-9999
+                        </div>
+                    </div>
+                    <form class="contact-form slide-up delay-1" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" required placeholder="Seu nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail Corporativo</label>
+                            <input type="email" id="email" required placeholder="seu@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" rows="4" required placeholder="Como podemos ajudar?"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary w-100">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text">SINC</span>
+                    <p>Excelência em soluções corporativas.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Início</a>
+                    <a href="#about">Sobre</a>
+                    <a href="#services">Serviços</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SINC. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
