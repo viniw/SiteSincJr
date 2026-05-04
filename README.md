@@ -23,7 +23,7 @@ Como o projeto não utiliza ferramentas de compilação ou frameworks, você pod
 
 ### Opção 2: Usar um Servidor Local com Python (Recomendado)
 Se você estiver no terminal (Linux/Mac) ou se tiver o Python instalado:
-1. Abra o terminal na pasta do projeto (`/home/vini/Documents/SINC/Site Sinc/`).
+1. Abra o terminal na pasta do projeto exemplo: (`/home/user/Documents/SINC/Site Sinc/`).
 2. Execute o comando:
    ```bash
    python3 -m http.server 8000
