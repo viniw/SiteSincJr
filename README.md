@@ -1,41 +1,39 @@
-# Site Empresarial SINC
+Site Empresarial & Portal SINC
+Este repositório contém o site institucional e o Portal Corporativo (SINC Workspace) da SINC. O projeto utiliza tecnologias web nativas para garantir performance, mantendo um design Premium em Dark Mode com destaques em Laranja Escuro.  
 
-Este é o repositório do site institucional da SINC. O projeto foi construído utilizando tecnologias web nativas (HTML5, Vanilla CSS3 e Javascript) para garantir alta performance, flexibilidade e independência de frameworks pesados.
+📁 Estrutura do Projeto
+🌐 Site Institucional (Público)
+index.html: Estrutura principal com seções Hero, Sobre, Serviços e Contato.  
 
-O design segue um estilo *Premium*, utilizando "Dark Mode" como base e a cor Laranja Escuro para destaques.
+style.css: Design system, animações e responsividade do site público.  
 
-## 📁 Estrutura do Projeto
+main.js: Lógica de navegação e animações de Scroll Reveal.  
 
-- `index.html`: A estrutura principal do site, contendo todas as seções (Hero, Sobre, Serviços, Contato).
-- `style.css`: Todo o design system, animações e regras de responsividade.
-- `main.js`: Lógica do menu mobile e animações de aparecimento ao rolar a página (Scroll Reveal).
-- `assets/`: Pasta contendo as imagens geradas (Logo e Hero Background).
+🔐 Portal Corporativo (Restrito)
+dashboard.html: Interface do portal com integração visual de ferramentas (Agenda, Tarefas e Drive).  
 
-## 🚀 Como testar e visualizar o site
+dashboard.css: Estilização específica para a grade de widgets e o overlay de login.  
 
-Existem três maneiras simples de visualizar o site localmente na sua máquina:
+dashboard.js: Lógica de autenticação simulada e controle de visibilidade dos widgets.  
 
-### Opção 1: Abrir diretamente no Navegador (Mais Rápido)
-Como o projeto não utiliza ferramentas de compilação ou frameworks, você pode simplesmente:
-1. Abrir a pasta `Site Sinc` no seu gerenciador de arquivos.
-2. Dar um duplo clique no arquivo `index.html`.
-3. Ele abrirá automaticamente no seu navegador padrão (Chrome, Firefox, Edge, etc).
+🛠️ Novas Funcionalidades: SINC Workspace
+O portal foi projetado para centralizar as ferramentas da equipe:  
 
-### Opção 2: Usar um Servidor Local com Python (Recomendado)
-Se você estiver no terminal (Linux/Mac) ou se tiver o Python instalado:
-1. Abra o terminal na pasta do projeto exemplo: (`/home/user/Documents/SINC/Site Sinc/`).
-2. Execute o comando:
-   ```bash
-   python3 -m http.server 8000
-   ```
-3. Abra o seu navegador e acesse a URL: `http://localhost:8000`
+Autenticação Restrita: Simulação de login via Google, permitindo acesso apenas para e-mails com domínio @sincjr.com.br.  
 
-### Opção 3: Usar o VS Code (Live Server)
-Se você estiver utilizando o editor Visual Studio Code:
-1. Instale a extensão chamada **Live Server** (por Ritwick Dey).
-2. Abra a pasta do projeto no VS Code.
-3. Clique com o botão direito no arquivo `index.html` e selecione **"Open with Live Server"**.
-4. O navegador abrirá automaticamente e qualquer alteração salva no código será atualizada instantaneamente na tela.
+Integração com Google Workspace: Widgets que incorporam Google Calendar, Google Tasks e pastas compartilhadas do Google Drive via iframes.  
 
----
-**Dica de visualização:** Ao testar no navegador, você pode usar a tecla `F12` (Ferramentas de Desenvolvedor) e clicar no ícone de "Dispositivos" (ou pressionar `Ctrl + Shift + M`) para simular como o site se comporta nas telas de diversos smartphones.
+Interface Dinâmica: Transição suave entre a tela de login e o dashboard com animações de entrada para os cartões de dados.  
+
+🚀 Como testar e visualizar o site
+Opção 1: Abrir diretamente no Navegador
+Abra a pasta do projeto e dê um duplo clique em index.html.  
+
+Para acessar o portal, clique no botão "Entrar" no menu de navegação.  
+
+Opção 2: Simulação de Login
+No portal corporativo (dashboard.html):
+
+Clique em "Entrar com Google".  
+
+O sistema validará o domínio. Atualmente, está configurado para aceitar o e-mail membro@sincjr.com.br para fins de demonstração.
