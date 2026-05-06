@@ -318,7 +318,7 @@
                         </div>
                         <div class="member-info">
                             <h3>Vinícius Wesner</h3>
-                            <p class="member-role">Designer UI/UX</p>
+                            <p class="member-role">Consultor</p>
                             <div class="member-social">
                                 <span class="social-tag">SINC</span>
                             </div>
@@ -333,8 +333,8 @@
                             </div>
                         </div>
                         <div class="member-info">
-                            <h3>Novo Integrante</h3>
-                            <p class="member-role">Gestor de Conteúdo</p>
+                            <h3>Pedro Foletto</h3>
+                            <p class="member-role">Consultor</p>
                             <div class="member-social">
                                 <span class="social-tag">SINC</span>
                             </div>
@@ -360,36 +360,38 @@
                         <!-- Texto incentivando o contato -->
                         <div class="info-item">
                             <!-- Informação específica: E-mail -->
-                            <strong>Email:</strong> contato@sincjr.com.br
+                            <strong>Email:</strong> marketing@sincjr.com.br
                         </div>
+
                         <div class="info-item">
                             <!-- Informação específica: Telefone -->
                             <strong>Telefone:</strong> +55 (51) 99999-9999
                         </div>
                     </div>
-                    <form class="contact-form slide-up delay-1" id="contactForm">
+                    <form class="contact-form slide-up delay-1" id="contactForm" action="https://formsubmit.co/marketing@sincjr.com.br" method="POST">
                         <!-- Coluna contendo o formulário de contato -->
                         <div class="form-group">
                             <!-- Grupo para o campo de Nome -->
                             <label for="name">Nome Completo</label>
                             <!-- Rótulo do campo de nome -->
-                            <input type="text" id="name" required placeholder="Seu nome">
+                            <input type="text" id="name" name="name" required placeholder="Seu nome">
                             <!-- Campo de entrada de texto obrigatório para o nome -->
                         </div>
                         <div class="form-group">
                             <!-- Grupo para o campo de E-mail -->
                             <label for="email">E-mail Corporativo</label>
                             <!-- Rótulo do e-mail -->
-                            <input type="email" id="email" required placeholder="seu@email.com">
+                            <input type="email" id="email" name="email" required placeholder="seu@email.com">
                             <!-- Campo de entrada obrigatório validado como e-mail -->
                         </div>
                         <div class="form-group">
                             <!-- Grupo para a Mensagem -->
                             <label for="message">Mensagem</label>
                             <!-- Rótulo da mensagem -->
-                            <textarea id="message" rows="4" required placeholder="Como podemos ajudar?"></textarea>
+                            <textarea id="message" name="message" rows="4" required placeholder="Como podemos ajudar?"></textarea>
                             <!-- Área de texto longa obrigatória para o usuário digitar a mensagem -->
                         </div>
+
                         <button type="submit" class="btn-primary w-100">Enviar Mensagem</button>
                         <!-- Botão de submissão do formulário, ocupando 100% da largura (w-100) -->
                     </form>
