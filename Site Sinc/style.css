@@ -4,10 +4,15 @@
     --color-surface: #141414;
     --color-surface-light: #1E1E1E;
 
-    --color-primary: #e65b2a;
+    --color-primary: #ef5929;
     /* Brand Orange */
-    --color-primary-hover: #f06a39;
-    --color-primary-light: rgba(230, 91, 42, 0.15);
+    --color-primary-hover: #b62532;
+    --color-primary-light: rgba(239, 89, 41, 0.15);
+
+    --color-gradient-1: #b62532;
+    --color-gradient-2: #ef5929;
+    --gradient-brand: linear-gradient(135deg, var(--color-gradient-1), var(--color-gradient-2));
+
 
     --color-text: #F0F0F0;
     --color-text-muted: #A0A0A0;
@@ -221,15 +226,18 @@ a {
     display: flex;
     align-items: center;
     position: relative;
-    background-color: var(--color-bg);
+    background: var(--gradient-brand);
+    overflow: hidden;
 }
 
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to right, rgba(10, 10, 10, 0.9) 0%, rgba(10, 10, 10, 0.4) 100%);
+    background: linear-gradient(to right, rgba(10, 10, 10, 0.95) 0%, rgba(10, 10, 10, 0.4) 100%),
+                radial-gradient(circle at 70% 30%, rgba(239, 89, 41, 0.3) 0%, transparent 50%);
     z-index: 1;
 }
+
 
 .hero-content {
     position: relative;
